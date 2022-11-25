@@ -1,0 +1,174 @@
+* {
+    color-scheme: dark;
+    scrollbar-color: #555 #222;
+}
+
+body {
+    background-color: #222;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#menu {
+    margin-left: 280px;
+}
+
+#content {
+    margin-left: 280px;
+    padding: 5px;
+}
+
+
+nav.countries-list {
+    background-color: #228f44;
+    width: 280px;
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#countries-list-toggle {
+    width: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #555;
+    position: fixed;
+    z-index: 999;
+    top: calc(50% - 20px);
+    left: 280px;
+    cursor: pointer;
+}
+
+header>nav>ul {
+    display: flex;
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #228f44;
+}
+
+header>nav>ul>li {
+    padding: 0 15px;
+}
+
+header>nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+header>nav>ul>li:hover {
+    background-color: #333;
+}
+
+
+@media (max-width: 800px) {
+    nav.countries-list {
+        display: none;
+    }
+
+    #countries-list-toggle {
+        left: 0;
+    }
+
+    #content,
+    #menu {
+        margin-left: 0;
+    }
+
+    header>nav>ul {
+        font-size: 18px;
+        line-height: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    header>nav>ul {
+        font-size: 15px;
+    }
+}
+
+nav.countries-list ul {
+    list-style: none;
+}
+
+
+nav.countries-list ul li {
+    display: block;
+    background-color: #228f44;
+}
+
+
+nav.countries-list a {
+    display: block;
+    padding-left: 10px;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+
+nav.countries-list a:hover {
+    background-color: #333;
+}
+
+
+nav.countries-list ul ul {
+    display: none;
+}
+
+nav.countries-list ul ul li {
+    background-color: green;
+}
+
+
+nav.countries-list ul ul ul li {
+    background-color: rgb(24, 194, 86);
+}
+
+.list-minus>i,
+.list-plus>i {
+    float: right;
+    line-height: 20px;
+    margin-right: 5px;
+}
+
+li>a.list-minus+ul {
+    display: block;
+}
+
+.cap-images {
+    text-align: center;
+}
+
+.cap-images .img {
+    width: 172px;
+    display: inline-block;
+}
+
+.cap-images img {
+    height: 160px;
+    width: auto;
+}
+
+.details-img {
+    width: 400px;
+    max-width: 49%;
+    min-width: 300px;
+}
+
+.last-updates {
+    margin-top: 10px;
+    border-top: 1px solid white;
+    padding-top: 5px;
+}
+
+.last-updates h2 {
+    font-size: 25px;
+}
+
+.last-updates h3 {
+    font-size: 20px;
+}
