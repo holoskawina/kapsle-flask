@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Strona 
+    <select onchange="changePage(this.value)">
+        {% for i in range(pages) %}
+            {% if i == page-1 %}
+                <option value="{{ limit*i }}" selected>{{ i+1 }}</option>
+            {% else %}
+                <option value="{{ limit*i }}">{{ i+1 }}</option>
+            {% endif %}
+        {% endfor %}
+    </select>
+    z {{ pages }}
+    <button onclick="nextPage(-1)">Poprzednia</button>
+    <button onclick="nextPage(1)">Następna</button></p>
+<p>{{ results }} wyników</p>
+<p>Kapsli na stronę: <input type="number" onchange="changeLimit(this.value)" value="{{ limit }}"></p>
+
+<div class="cap-images">
+    {% for i in ids %}
+        <div class="img">
+            <a href="/kapsel/{{ i }}" target="_blank"><img src="{{ urls[i] }}" alt="{{ i }}"></a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

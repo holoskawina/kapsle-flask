@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block navbar %}
+<div class="navbar navbar-expand-sm bg-secondary navbar-dark" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Home</a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/">Strona główna</a> </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="alert alert-danger"><h3>Nie ma takiej strony</h3></div>
+</div>
+{% endblock %}

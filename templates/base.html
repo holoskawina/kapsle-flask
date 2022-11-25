@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}holoskawina.xyz{% endblock %}</title>
+    <script src="https://kit.fontawesome.com/2a0e7d9a85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/list.js" defer></script>
+</head>
+
+<body>
+    {% block list %}<nav class="countries-list" id="countries-list">{% include 'list.html' %}</nav>{% endblock %}
+    <div id="countries-list-toggle" onclick="toggleCountriesList()">
+        <i class="fas fa-angle-left"></i>
+    </div>
+    <div id="menu">
+        {% block menu %}
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Strona główna</a></li>
+                    <li><a href="/wymiana">Wymiana</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% endblock %}
+    </div>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>

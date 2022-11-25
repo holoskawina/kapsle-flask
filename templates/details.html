@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p>ID: {{ id }}</p>
+    <p>Browar: <a href="/wyswietl/{{ country }}">{{ details['country'] }}</a>/<a href="/wyswietl/{{ country }}/{{ company }}">{{ details['company'] }}</a>/<a href="/wyswietl/{{ country }}/{{ company }}/{{ brewery }}">{{ details['brewery'] }}</a></p>
+    <p>Na wymianę: {{ details['trade'] }}</p>
+    <p>katalogkapsli.pl: <a href="https://katalogkapsli.pl/kapsel/{{ details['katalog'] }}">{{ details['katalog'] }}</a></p>
+    <p>katalogkapsli.pl (odwrotki): <a href="https://katalogkapsli.pl/kapsel/{{ details['odwrotki'] }}">{{ details['odwrotki'] }}</a></p>
+    <p>crowncaps.info: <a href="https://crowncaps.info/caps/{{ details['cci'] }}">{{ details['cci'] }}</a></p>
+    <p>colnect.com: <a href="https://colnect.com/en/bottlecaps/bottlecap/{{ details['colnect'] }}">{{ details['colnect'] }}</a></p>
+    {% for i in images %}
+        <img class="details-img" src="{{ i }}" alt="{{ id }}">
+    {% endfor %}
+{% endblock %}
