@@ -55,6 +55,7 @@ header>nav>ul>li {
 header>nav>ul>li>a {
     text-decoration: none;
     color: white;
+    display: block;
 }
 
 header>nav>ul>li:hover {
@@ -171,4 +172,9 @@ li>a.list-minus+ul {
 
 .last-updates h3 {
     font-size: 20px;
+}
+
+.last-updates ul {
+    list-style: initial;
+    padding-left: 20px;
 }

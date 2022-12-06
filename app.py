@@ -59,6 +59,7 @@ def image_url(image_id):
         return url_for('static', filename=f'img/{image_id}.gif')
     return url_for('static', filename=f'img/{image_id}.jpg')
 
+# TODO show bigger images for big caps
 
 @app.route('/')
 def index():
@@ -92,7 +93,7 @@ def show_all():
         abort(500)
     page = offset//limit+1
     pages = count//limit+1
-    return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=data.count_caps(country))
+    return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=len(ids))
 
 
 @app.route('/wyswietl/<country>/')
@@ -195,13 +196,13 @@ def cap_details(cap_id):
         images.append(image_url(cap_id+'t'))
     else:
         images.append(image_url(cap_id))
-    country = urllib.parse.quote(details['country'])
+    country = details['country'].replace(' ', '%20')
     try:
-        company = urllib.parse.quote(details['company'])
+        company = details['company'].replace(' ', '%20')
     except KeyError:
         company = ''
     try:
-        brewery = urllib.parse.quote(details['brewery'])
+        brewery = details['brewery'].replace(' ', '%20')
     except KeyError:
         brewery = ''
     return render_template('details.html', id=cap_id, details=details, images=images, country=country, company=company, brewery=brewery)
