@@ -18,8 +18,8 @@
 
 <div class="cap-images">
     {% for id in ids %}
-        <div class="img">
-            <a href="/kapsel/{{ id }}" target="_blank"><img src="{{ urls[id] }}" alt="{{ id }}"></a>
+        <div class="img {% if id in big %}  big{% endif %}">
+            <a href="/kapsel/{{ id }}"><img src="{{ urls[id] }}" alt="{{ id }}"></a>
         </div>
     {% endfor %}
 </div>

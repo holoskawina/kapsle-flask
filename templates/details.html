@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <p>ID: {{ id }}</p>
-    <p>Browar: <a href="/wyswietl/{{ country }}">{{ details['country'] }}</a>/<a href="/wyswietl/{{ country }}/{{ company }}">{{ details['company'] }}</a>/<a href="/wyswietl/{{ country }}/{{ company }}/{{ brewery }}">{{ details['brewery'] }}</a></p>
+    <p>Państwo / Browar: <a href="/wyswietl/{{ country }}/">{{ details['country'] }}</a>/<a href="/wyswietl/{{ country }}/{{ company }}/">{{ details['company'] }}</a>/<a href="/wyswietl/{{ country }}/{{ company }}/{{ brewery }}/">{{ details['brewery'] }}</a></p>
     <p>Na wymianę: {{ details['trade'] }}</p>
     <p>katalogkapsli.pl: <a href="https://katalogkapsli.pl/kapsel/{{ details['katalog'] }}">{{ details['katalog'] }}</a></p>
     <p>katalogkapsli.pl (odwrotki): <a href="https://katalogkapsli.pl/kapsel/{{ details['odwrotki'] }}">{{ details['odwrotki'] }}</a></p>

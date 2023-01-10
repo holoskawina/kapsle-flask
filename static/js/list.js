@@ -1,11 +1,28 @@
+
+
+if (localStorage.getItem('expandElements') === null) {
+    localStorage.setItem('expandElements', '[]')
+}
+
+let i = 0
 document.querySelectorAll('li>a:not(:only-child)').forEach(element => {
     const icon = document.createElement('i')
-    icon.className = 'fas fa-plus'
-    icon.onclick = function () { toggle_list(this); return false }
+    const id = `listitem${i}`
+    element.id = id
     element.appendChild(icon)
-    element.className = 'list-plus'
+    let expandElements = JSON.parse(localStorage.getItem('expandElements'))
+    if (expandElements.includes(id)) {
+        element.classList.add('list-minus')
+        icon.className = 'fas fa-minus'
+    }
+    else {
+        expandElements.push(id)
+        element.classList.add('list-plus')
+        icon.className = 'fas fa-plus'
+    }
+    icon.onclick = function () { toggle_list(this); return false }
+    i++
 });
-
 if (localStorage.getItem('hideCouintriesList') === 'true') {
     localStorage.setItem('hideCouintriesList', "false")
 } else {
@@ -13,12 +30,28 @@ if (localStorage.getItem('hideCouintriesList') === 'true') {
 }
 toggleCountriesList()
 
+const list = document.getElementById('countries-list')
+list.onscroll = () => { localStorage.setItem('scrollPos', list.scrollTop) }
+list.scrollTop = localStorage.getItem('scrollPos')
+
 function toggle_list(element) {
-    // element.parentElement.parentElement.lastChild.style.display='block'
-    element.parentElement.classList.toggle('list-plus')
-    element.parentElement.classList.toggle('list-minus')
-    element.classList.toggle('fa-plus')
-    element.classList.toggle('fa-minus')
+    let expandElements = JSON.parse(localStorage.getItem('expandElements'))
+    const id = element.parentElement.id
+    if (expandElements.includes(id)) {
+        expandElements = expandElements.filter(e => e !== id)
+        element.parentElement.classList.add('list-plus')
+        element.parentElement.classList.remove('list-minus')
+        element.classList.add('fa-plus')
+        element.classList.remove('fa-minus')
+    }
+    else {
+        expandElements.push(id)
+        element.parentElement.classList.remove('list-plus')
+        element.parentElement.classList.add('list-minus')
+        element.classList.remove('fa-plus')
+        element.classList.add('fa-minus')
+    }
+    localStorage.setItem('expandElements', JSON.stringify(expandElements))
 }
 
 function changePage(offset) {

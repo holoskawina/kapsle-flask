@@ -154,6 +154,13 @@ li>a.list-minus+ul {
     width: auto;
 }
 
+.cap-images .img.big {
+    width: 215px;
+}
+.cap-images .img.big img {
+    height: 200px;
+}
+
 .details-img {
     width: 400px;
     max-width: 49%;

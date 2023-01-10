@@ -59,8 +59,6 @@ def image_url(image_id):
         return url_for('static', filename=f'img/{image_id}.gif')
     return url_for('static', filename=f'img/{image_id}.jpg')
 
-# TODO show bigger images for big caps
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -116,14 +114,18 @@ def show_country(country):
     ids = data.ids_by_country(country)
     count = len(ids)
     ids = ids[offset:limit + offset]
+    if len(ids) == 0:
+        abort(500)
+    big = []
+    for id in ids:
+        if 'd' in data.details_by_id(id)['info']:
+            big.append(id)
     urls = {}
     for i in ids:
         urls[i] = image_url(i)
-    if len(ids) == 0:
-        abort(500)
     page = offset//limit+1
     pages = count//limit+1
-    return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=data.count_caps(country))
+    return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=data.count_caps(country), big=big)
 
 
 @app.route('/wyswietl/<country>/<company>/')
@@ -154,7 +156,11 @@ def show_company(country, company):
         abort(500)
     page = offset//limit+1
     pages = count//limit+1
-    return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=data.count_caps(country, company))
+    big = []
+    for id in ids:
+        if 'd' in data.details_by_id(id)['info']:
+            big.append(id)
+    return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=data.count_caps(country, company), big=big)
 
 
 @app.route('/wyswietl/<country>/<company>/<brewery>/')
@@ -184,7 +190,11 @@ def show_brewery(country, company, brewery):
         abort(500)
     page = offset//limit+1
     pages = count//limit+1
-    return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=data.count_caps(country, company, brewery))
+    big = []
+    for id in ids:
+        if 'd' in data.details_by_id(id)['info']:
+            big.append(id)
+    return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=data.count_caps(country, company, brewery), big=big)
 
 
 @app.route('/kapsel/<cap_id>')
