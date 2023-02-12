@@ -5,6 +5,15 @@ if (localStorage.getItem('expandElements') === null) {
 }
 
 let i = 0
+const href = document.location.href.split('/')
+
+document.querySelectorAll('#countries-list li>a').forEach(element => {
+    for (let i = 4; i < href.length - 1; i++) {
+        if (encodeURIComponent(element.innerText).includes(href[i])) {
+            element.classList.add('list-selected')
+        }
+    };
+})
 document.querySelectorAll('li>a:not(:only-child)').forEach(element => {
     const icon = document.createElement('i')
     const id = `listitem${i}`

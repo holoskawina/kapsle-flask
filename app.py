@@ -93,6 +93,43 @@ def show_all():
     pages = count//limit+1
     return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=len(ids))
 
+@app.route('/missingdata/<name>/<country>')
+def show_missing(name, country):
+    name = urllib.parse.unquote(name)
+    country = urllib.parse.unquote(country)
+    limit = request.args.get('limit')
+    offset = request.args.get('offset')
+    if limit is None or int(limit) > 500:
+        limit = 500
+    elif int(limit) < 1:
+        limit = 1
+    else:
+        limit = int(limit)
+    if offset is None:
+        offset = 0
+    else:
+        offset = int(offset)
+    if offset < 0:
+        abort(500)
+    ids2 = data.ids_by_country(country)
+    ids = []
+    if len(ids2) == 0:
+        abort(500)
+    big = []
+    for id in ids2:
+        details = data.details_by_id(id)
+        if 'd' in details['info']:
+            big.append(id)
+        if  not name in details:
+            ids.append(id)
+    urls = {}
+    for i in ids:
+        urls[i] = image_url(i)
+    count = len(ids)
+    ids = ids[offset:limit + offset]
+    page = offset//limit+1
+    pages = count//limit+1
+    return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=len(ids), big=big)
 
 @app.route('/wyswietl/<country>/')
 def show_country(country):
