@@ -9,7 +9,7 @@ const href = document.location.href.split('/')
 
 document.querySelectorAll('#countries-list li>a').forEach(element => {
     for (let i = 4; i < href.length - 1; i++) {
-        if (encodeURIComponent(element.innerText).includes(href[i])) {
+        if (element.innerText.includes(decodeURIComponent(href[i]))) {
             element.classList.add('list-selected')
         }
     };
