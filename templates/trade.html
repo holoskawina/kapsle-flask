@@ -1,7 +1,86 @@
 {% extends 'base.html' %}
-{% block title %}Wymiana{% endblock %}
+{% block title %}Wymiana - holoskawina.xyz{% endblock %}
+{% block styles %}
+{{ super() }}
+<style>
+    .images img {
+        width: 300px;
+        cursor: pointer;
+    }
+
+    /* The expanding image container */
+    .expanded-img-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100vw;
+        z-index: 999999;
+    }
+
+    .expanded-img-container img {
+        max-height: 100vh;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        color: white;
+        font-size: 100px;
+        cursor: pointer;
+    }
+</style>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+<script>
+    function expand_image(img) {
+        const expandImg = document.getElementById("expandedImg")
+        expandImg.src = img.src;
+        expandImg.parentElement.style.display = "block";
+    } 
+</script>
+{% endblock %}
 {% block list %}<nav class="countries-list" id="countries-list">{% include 'list-trade.html' %}</nav>{% endblock %}
 {% block content %}
-<p>Tutaj możesz obejrzeć kapsle, które mam na wymianę.</p>
-<p>Aby wyswietlić kapsle, wybierz kategorię z menu po lewej.</p>
+<h1>Wymiana</h1>
+<p>Tutaj możesz obejrzeć kapsle, które mam na wymianę. Kliknij na zdjęcie, aby je powiększyć.</p>
+<p>Możesz też wyswietlić kapsle, wybierając kategorię z menu po lewej.</p>
+<div class="images">
+    <h2>Polska</h2>
+    <h3>Grupa Żywiec</h3>
+    <img src="/static/img/trade/7.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/8.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/9.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/10.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <h3>Carlsberg</h3>
+    <img src="/static/img/trade/11.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <h3>Kompania piwowarska</h3>
+    <img src="/static/img/trade/12.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/13.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/14.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <h3>Pozostałe</h3>
+    <img src="/static/img/trade/15.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/16.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/17.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/18.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/19.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/20.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <h2>Zagranica</h2>
+    <img src="/static/img/trade/4.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/5.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/6.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <h2>Marki globalne</h2>
+    <img src="/static/img/trade/1.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/2.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+    <img src="/static/img/trade/3.jpg" alt="kapsle na wymianę" onclick="expand_image(this)">
+</div>
+<div class="expanded-img-container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg">
+</div>
 {% endblock %}

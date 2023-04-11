@@ -8,6 +8,21 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+h1 {
+    font-size: 35px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 #menu {
     margin-left: 280px;
 }
@@ -139,9 +154,11 @@ nav.countries-list ul ul ul li {
 li>a.list-minus+ul {
     display: block;
 }
-.list-selected{
+
+.list-selected {
     background-color: #333;
 }
+
 .cap-images {
     text-align: center;
 }
@@ -159,6 +176,7 @@ li>a.list-minus+ul {
 .cap-images .img.big {
     width: 215px;
 }
+
 .cap-images .img.big img {
     height: 200px;
 }
@@ -175,13 +193,7 @@ li>a.list-minus+ul {
     padding-top: 5px;
 }
 
-.last-updates h2 {
-    font-size: 25px;
-}
 
-.last-updates h3 {
-    font-size: 20px;
-}
 
 .last-updates ul {
     list-style: initial;

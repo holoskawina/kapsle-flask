@@ -1,5 +1,6 @@
 from itertools import count
-from flask import Flask, abort, render_template, url_for, request
+import os
+from flask import Flask, abort, render_template, request, send_from_directory, url_for
 from capsdata import CapsData
 from os.path import exists
 import urllib.parse
@@ -383,6 +384,12 @@ def show_brewery_trade(country, company, brewery):
 @app.route('/kontakt')
 def contact():
     return render_template('kontakt.html')
+
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
 if __name__ == '__main__':

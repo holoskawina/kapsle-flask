@@ -2,3 +2,5 @@
 /static/img
 /venv
 /__pycache__
+/templates/list.html
+/templates/list-trade.html

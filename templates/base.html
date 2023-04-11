@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}holoskawina.xyz{% endblock %}</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <script src="https://kit.fontawesome.com/2a0e7d9a85.js" crossorigin="anonymous"></script>
+    {% block styles %}
     <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="stylesheet" href="/static/css/style.css">
+    {% endblock %}
+    {% block scripts %}
     <script src="/static/js/list.js" defer></script>
+    {% endblock %}
 </head>
 
 <body>
