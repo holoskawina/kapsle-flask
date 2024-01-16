@@ -285,7 +285,11 @@ def show_all_trade():
         abort(500)
     page = offset//limit+1
     pages = count//limit+1
-    return render_template('show-trade.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=count)
+    big = []
+    for id in ids:
+        if 'd' in data.details_by_id(id)['info']:
+            big.append(id)
+    return render_template('show-trade.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=count, big=big)
 
 
 @app.route('/wymiana/wyswietl/<country>/')
@@ -315,7 +319,11 @@ def show_country_trade(country):
         abort(500)
     page = offset//limit+1
     pages = count//limit+1
-    return render_template('show-trade.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=count)
+    big = []
+    for id in ids:
+        if 'd' in data.details_by_id(id)['info']:
+            big.append(id)
+    return render_template('show-trade.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=count, big=big)
 
 
 @app.route('/wymiana/wyswietl/<country>/<company>/')
@@ -346,7 +354,11 @@ def show_company_trade(country, company):
         abort(500)
     page = offset//limit+1
     pages = count//limit+1
-    return render_template('show-trade.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=count)
+    big = []
+    for id in ids:
+        if 'd' in data.details_by_id(id)['info']:
+            big.append(id)
+    return render_template('show-trade.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=count, big=big)
 
 
 @app.route('/wymiana/wyswietl/<country>/<company>/<brewery>/')
@@ -394,3 +406,4 @@ def favicon():
 
 if __name__ == '__main__':
     app.run()
+    # app.run(host='0.0.0.0')
