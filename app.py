@@ -1,6 +1,6 @@
 from itertools import count
 import os
-from flask import Flask, abort, render_template, request, send_from_directory, url_for
+from flask import Flask, abort, redirect, render_template, request, send_from_directory, url_for
 from capsdata import CapsData
 from os.path import exists
 import urllib.parse
@@ -233,6 +233,12 @@ def show_brewery(country, company, brewery):
         if 'd' in data.details_by_id(id)['info']:
             big.append(id)
     return render_template('show.html', ids=ids, urls=urls, page=page, pages=pages, limit=limit, results=data.count_caps(country, company, brewery), big=big)
+
+
+@app.route('/kapsel')
+def cap_details_get():
+    cap_id = request.args.get("cap_id")
+    return redirect(f'/kapsel/{cap_id}')
 
 
 @app.route('/kapsel/<cap_id>')

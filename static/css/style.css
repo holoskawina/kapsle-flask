@@ -75,7 +75,7 @@ header>nav>ul>li>a {
 }
 
 header>nav>ul>li:hover {
-    background-color: #333;
+    background-color: #33d;
 }
 
 
@@ -128,7 +128,7 @@ nav.countries-list a {
 
 
 nav.countries-list a:hover {
-    background-color: #333;
+    background-color: #33d;
 }
 
 

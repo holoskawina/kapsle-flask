@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
+    <form action="/kapsel" method="get">
+        <label for="cap_id">Wyświetl inny kapsel:</label>
+        <input type="number" name="cap_id" id="cap_id">
+        <button type="submit">Wyświetl</button>
+    </form>
     <p>ID: {{ id }}</p>
     <p>Państwo / Browar: <a href="/wyswietl/{{ country }}/">{{ details['country'] }}</a>/<a href="/wyswietl/{{ country }}/{{ company }}/">{{ details['company'] }}</a>/<a href="/wyswietl/{{ country }}/{{ company }}/{{ brewery }}/">{{ details['brewery'] }}</a></p>
     <p>Na wymianę: {{ details['trade'] }}</p>
@@ -10,4 +15,10 @@
     {% for i in images %}
         <img class="details-img" src="{{ i }}" alt="{{ id }}">
     {% endfor %}
+{% endblock %}
+{% block scripts %}
+    {{super()}}
+    <script>
+        document.getElementById('cap_id').focus()
+    </script>
 {% endblock %}

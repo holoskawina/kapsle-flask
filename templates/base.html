@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="stylesheet" href="/static/css/style.css">
     {% endblock %}
-    {% block scripts %}
-    <script src="/static/js/list.js" defer></script>
-    {% endblock %}
 </head>
 
 <body>
@@ -39,6 +36,9 @@
     <div id="content">
         {% block content %}{% endblock %}
     </div>
+    {% block scripts %}
+    <script src="/static/js/list.js"></script>
+    {% endblock %}
 </body>
 
 </html>
