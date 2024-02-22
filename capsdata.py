@@ -113,6 +113,8 @@ class CapsData:
                 2887: {"trade": 0, "info": "", "colnect": "44225", "cci": "131202"},
                 2888: {"trade": 0, "info": ""},
                 10035: {"trade": 0, "info": "", "cci": "162488", "colnect": "27282"},
+                10124: {"trade": 0, "info": "", "cci": "163977", "colnect": "55726"}, 
+                10139: {"trade": 0, "info": "", "cci": "229406"}, 
             },
             "Carlsberg": {
                 1752: {"trade": 2, "info": "x", "colnect": "33076", "cci": "76200", "katalog": "PCAR030"},
@@ -231,6 +233,10 @@ class CapsData:
                 5250: {"trade": 0, "info": "", "cci": "218495", "katalog": "PCAR039", "colnect": "56113"},
             },
             "Coca-Cola": {
+                10127: {"trade": 0, "info": "", "cci": "254331", "colnect": "27522"}, 
+                10141: {"trade": 0, "info": "", "cci": "233929"}, 
+                10142: {"trade": 0, "info": ""},
+                10151: {"trade": 0, "info": "x", "cci": "289942"},
                 10065: {"trade": 0, "info": "", "cci": "185908"},
                 2977: {"trade": 106, "info": "", "colnect": "50987", "katalog": "PNCCO118", "cci": "104589"},
                 2976: {"trade": 56, "info": "", "colnect": "50987", "katalog": "PNCCO121", "cci": "104589"},
@@ -470,6 +476,8 @@ class CapsData:
                 8866: {"trade": 0, "info": "", "cci": "264750", "colnect": "68476"},
                 9499: {"trade": 0, "info": "", "cci": "112416", "colnect": "36924"},
                 2090: {"trade": 0, "info": "", "colnect": "18346", "cci": "33178"},
+                10146: {"trade": 0, "info": "", "cci": "285212"},
+                10157: {"trade": 0, "info": "", "cci": "286478"}
             },
             "Desperados": {
                 4700: {"trade": 3, "info": "", "colnect": "56240", "katalog": "PDES020", "cci": "214469"},
@@ -600,6 +608,7 @@ class CapsData:
                 9045: {"trade": 0, "info": "", "cci": "141320", "colnect": "60190"},
                 9802: {"trade": 0, "info": ""},  # Arabia Saudyjska??
                 9836: {"trade": 0, "info": "", "cci": "77401", "colnect": "65919"},
+                10162: {"trade": 0, "info": "", "cci": "138001", "colnect": "44390"},
             },
             "Grolsch": {
                 9366: {"trade": 0, "info": "", "colnect": "41710", "cci": "117043"},
@@ -637,6 +646,7 @@ class CapsData:
                 4134: {"trade": 0, "info": "", "cci": "72231", "colnect": "2099"},
                 7185: {"trade": 2, "info": "", "cci": "166524"},
                 9169: {"trade": 0, "info": "", "cci": "47485", "colnect": "26102"},
+                10134: {"trade": 0, "info": "", "cci": "126793", "colnect": "46422"}, 
             },
             "Heineken": {
                 1927: {"trade": 0, "info": "", "cci": "691", "colnect": "64225"},
@@ -711,6 +721,7 @@ class CapsData:
                 1963: {"trade": 1, "info": "", "colnect": "36931", "cci": "78782", "katalog": "PHEI009"},
                 8344: {"trade": 0, "info": "", "colnect": "63508", "cci": "1275"},
                 9299: {"trade": 0, "info": "", "colnect": "66180", "cci": "206479"},
+                10172: {"trade": 0, "info": "", "cci": "199352"},
             },
             "Kinley": {
                 2960: {"trade": 0, "info": "", "colnect": "18893", "cci": "47447", "katalog": "PNKIN009"},
@@ -885,6 +896,7 @@ class CapsData:
                 6463: {"trade": 0, "info": "", "colnect": "33035", "cci": "57138"},
                 7822: {"trade": 0, "info": "", "colnect": "33035", "cci": "57138"},
                 8359: {"trade": 0, "info": "", "colnect": "1983", "cci": "5456"},
+                10152: {"trade": 0, "info": "", "colnect": "40244", "cci": "149151"},
             },
             "Mirinda": {
                 3078: {"trade": 0, "info": "", "cci": "173179", "katalog": "PNMIR018"},
@@ -926,6 +938,7 @@ class CapsData:
                 9650: {"trade": 0, "info": "", "cci": "76867", "colnect": "40684"},
             },
             "Pepsi": {
+                10126: {"trade": 0, "info": ""},
                 3046: {"trade": 3, "info": "", "colnect": "18900", "cci": "42462", "katalog": "PNPEP155"},
                 3632: {"trade": 0, "info": "", "colnect": "8058", "cci": "133713", "katalog": "PNPEP146_b"},
                 3047: {"trade": 0, "info": "", "colnect": "8058", "katalog": "PNPEP144"},
@@ -1110,6 +1123,10 @@ class CapsData:
                 8135: {"trade": 0, "info": "", "cci": "79812", "colnect": "68452"},
                 8334: {"trade": 0, "info": "", "colnect": "21919", "cci": "46285"},
                 9257: {"trade": 0, "info": "", "colnect": "63198", "cci": "74953"},
+                10138: {"trade": 0, "info": "", "cci": "271207"}, 
+                10147: {"trade": 0, "info": "", "cci": "279890", "colnect": "50706"},
+                10148: {"trade": 0, "info": "", "cci": "63274", "colnect": "51567"}, 
+                10171: {"trade": 0, "info": "", "cci": "236282", "colnect": "27307"},
             },
             "Somersby": {
                 3869: {"trade": 19, "info": "", "colnect": "33348", "katalog": "PSOM010", "cci": "89034"},
@@ -1283,6 +1300,9 @@ class CapsData:
                 1397: {"trade": 0, "info": "", "cci": "271616", "colnect": "32153"},
                 1400: {"trade": 0, "info": "", "colnect": "17460", "cci": "34749"},
                 3762: {"trade": 0, "info": "", "colnect": "17469", "cci": "26198"},
+                10143: {"trade": 0, "info": "", "cci": "279510"},
+                10144: {"trade": 0, "info": "", "cci": "302809"},
+                10145: {"trade": 0, "info": "", "cci": "252679"},
             },
             "Tiger": {
                 7498: {"trade": 0, "info": "", "cci": "8725", "colnect": "17355"},
@@ -2815,7 +2835,8 @@ class CapsData:
                 1697: {"trade": 0, "info": "", "colnect": "16276", "cci": "21599"},
                 9266: {"trade": 0, "info": "", "cci": "183605"},
                 9850: {"trade": 0, "info": "", "cci": "173634", "colnect": "49378"}, 
-                10045: {"trade": 0, "info": "", "cci": "51712"}, },
+                10045: {"trade": 0, "info": "", "cci": "51712"}, 
+                10135: {"trade": 0, "info": "", "cci": "158013", "colnect": "54213"}, }, 
             "Assens": {
                 1693: {"trade": 0, "info": "", "colnect": "21537", "cci": "76428"},
                 9893: {"trade": 1, "info": "", "colnect": "21537", "cci": "48410"}, },
@@ -3178,7 +3199,8 @@ class CapsData:
             8968: {"trade": 0, "info": "", "cci": "140700", "colnect": "41961"},
             9371: {"trade": 0, "info": "", "cci": "155368", "colnect": "57750"}},
         106: {
-            4490: {"trade": 0, "info": "", "cci": "146059", "colnect": "41040"}},
+            4490: {"trade": 0, "info": "", "cci": "146059", "colnect": "41040"},
+            10149: {"trade": 0, "info": "", "cci": "129198", "colnect": "42859"}},
         114: {
             4624: {"trade": 1, "info": "", "cci": "66487", "colnect": "27996"},
             4625: {"trade": 0, "info": "", "cci": "72049", "colnect": "11575"},
@@ -3547,6 +3569,7 @@ class CapsData:
                 9225: {"trade": 0, "info": "", "cci": "114384", "colnect": "46861"},
                 9226: {"trade": 0, "info": "", "cci": "5229", "colnect": "32835"},
                 9585: {"trade": 1, "info": "", "cci": "5229", "colnect": "32835"},
+                10164: {"trade": 0, "info": "", "cci": "226112"},
             },
             "Amsterdam (Oedipus)": {
                 8112: {"trade": 0, "info": "", "cci": "189985"},
@@ -3645,6 +3668,7 @@ class CapsData:
                 1968: {"trade": 0, "info": "", "cci": "86", "colnect": "4821"},
                 9948: {"trade": 0, "info": "", "cci": "86", "colnect": "4821"},
                 1964: {"trade": 0, "info": "", "colnect": "39401", "cci": "107303"},
+                10154: {"trade": 0, "info": "", "colnect": "61289", "cci": "237637"}, 
             },
             "Meppel": {
                 10081: {"trade": 0, "info": "", "cci": "5966", "colnect": "22474"},
@@ -3689,6 +3713,9 @@ class CapsData:
                 8482: {"trade": 0, "info": "", "colnect": "35761", "cci": "49512"},
             },
         },
+        139: {
+            10123: {"trade": 0, "info": "", "cci": "253395"}, 
+            10181: {"trade": 0, "info": "", "cci": "289941"},}, 
         27: {
             4123: {"trade": 0, "info": ""},
             1980: {"trade": 0, "info": "", "cci": "127775", "colnect": "55096"},
@@ -3798,6 +3825,8 @@ class CapsData:
             4227: {"trade": 0, "info": "", "cci": "16178", "colnect": "1021"},
             4228: {"trade": 0, "info": "", "cci": "132827", "colnect": "43097"},
             8501: {"trade": 0, "info": "", "cci": "38267", "colnect": "27243"},
+            10160: {"trade": 0, "info": "", "cci": "219496", "colnect": "64812"},
+            10183: {"trade": 0, "info": "", "cci": "126740"},
         },
         34: {
             2011: {"trade": 0, "info": "", "colnect": "17282", "cci": "71986"},
@@ -3965,7 +3994,8 @@ class CapsData:
             4896: {"trade": 0, "info": "", "cci": "16135", "colnect": "17260"},
             4897: {"trade": 0, "info": "", "cci": "16137", "colnect": "17261"},
             4898: {"trade": 0, "info": "", "cci": "38073"},
-            4899: {"trade": 0, "info": "", "cci": "16120", "colnect": "17262"}},
+            4899: {"trade": 0, "info": "", "cci": "16120", "colnect": "17262"},
+            10176: {"trade": 0, "info": "", "cci": "275354"}}, 
         40: {
             2036: {"trade": 0, "info": "", "colnect": "16737"}},
         83: {
@@ -4179,7 +4209,8 @@ class CapsData:
                 2114: {"trade": 0, "info": "", "colnect": "45972", "cci": "42669"},
                 2115: {"trade": 0, "info": "", "cci": "72361"},
                 4916: {"trade": 0, "info": "", "colnect": "33225", "cci": "27441"}, 
-                10088: {"trade": 0, "info": "", "colnect": "46668", "cci": "153468"}, },
+                10088: {"trade": 0, "info": "", "colnect": "46668", "cci": "153468"}, 
+                10158: {"trade": 0, "info": "", "colnect": "46668", "cci": "257890"}, }, 
             "Ciudad de México (GEPP)": {
                 9359: {"trade": 0, "info": "", "cci": "281000"}, },
             "Ciudad de México (Modelo)": {  # {Victoria}
@@ -4231,6 +4262,7 @@ class CapsData:
                 9375: {"trade": 0, "info": "", "cci": "71951", "colnect": "37733"},
                 9496: {"trade": 0, "info": "", "cci": "18253", "colnect": "30330"},
                 9508: {"trade": 0, "info": "", "cci": "18091", "colnect": "28294"},
+                10159: {"trade": 0, "info": "", "cci": "216432", "colnect": "56277"},
             },
             "Monterrey (Topo Chico)": {
                 8937: {"trade": 0, "info": "", "colnect": "18358", "cci": "230168"},
@@ -7082,7 +7114,8 @@ class CapsData:
             9126: {"trade": 0, "info": "", "cci": "54765", "colnect": "28285"},
             9127: {"trade": 0, "info": "", "cci": "1277", "colnect": "20235"}},
         136: {
-            9835: {"trade": 0, "info": "", "cci": "69994", "colnect": "48553"}},
+            9835: {"trade": 0, "info": "", "cci": "69994", "colnect": "48553"},
+            10161: {"trade": 0, "info": "", "cci": "269333"}},
         51: {
             "Bergen (Hansa)": {
                 2681: {"trade": 0, "info": "", "colnect": "37913", "cci": "235637"},
@@ -7171,7 +7204,8 @@ class CapsData:
                 4170: {"trade": 0, "info": "x", "cci": "72282"},
                 6169: {"trade": 0, "info": "", "colnect": "46875", "cci": "134435"},
                 6170: {"trade": 0, "info": "", "colnect": "52328", "cci": "273312"},
-                6171: {"trade": 0, "info": "", "colnect": "52328", "cci": "205961"}, },
+                6171: {"trade": 0, "info": "", "colnect": "52328", "cci": "205961"}, 
+                10125: {"trade": 0, "info": "", "cci": "213669"}, },
             "Miraflores": {
                 6172: {"trade": 0, "info": "", "colnect": "44621", "cci": "189622"}, },
             "Oxapampa": {
@@ -11455,6 +11489,9 @@ class CapsData:
             4628: {"trade": 0, "info": "", "colnect": "37194", "cci": "155111"},
             4629: {"trade": 0, "info": "", "cci": "79973"},
             9844: {"trade": 0, "info": "", "cci": "149609"}},
+        138: {
+            10121: {"trade": 0, "info": "", "colnect": "53852", "cci": "188626"},
+            10182: {"trade": 0, "info": "", "cci": "153425"},}, 
         57: {
             "Câmara de Lobos": {
                 8961: {"trade": 0, "info": "", "colnect": "44428", "cci": "107025"},
@@ -11989,18 +12026,29 @@ class CapsData:
         74: {
             "Amana": {
                 9105: {"trade": 0, "info": "", "colnect": "30512", "cci": "121185"}, },
+            "Auburndale": {
+                10137: {"trade": 0, "info": "", "colnect": "42723", "cci": "118920"}, 
+                10180: {"trade": 0, "info": "", "colnect": "48560", "cci": "148474"}, }, 
             "Austin": {
                 7897: {"trade": 0, "info": "", "cci": "170757"}, },
             "Boston (Harpoon)": {
                 8039: {"trade": 0, "info": "", "colnect": "9766", "cci": "2418"}, },
             "Boston (Samuel Adams)": {
-                8384: {"trade": 0, "info": "", "colnect": "23427", "cci": "33900"}, },
-            "Chicago": {
-                9509: {"trade": 0, "info": "", "colnect": "32282", "cci": "191437"}, },
+                8384: {"trade": 0, "info": "", "colnect": "23427", "cci": "33900"}, 
+                10136: {"trade": 0, "info": "x", "cci": "287714"},
+                10150: {"trade": 0, "info": "x", "cci": "237301"}, },
+            "Chicago (Goose Island)": {
+                9509: {"trade": 0, "info": "", "colnect": "32282", "cci": "191437"}, 
+                10175: {"trade": 0, "info": "", "cci": "298162"}, },
+            "Chicago (Globe Products)": {
+                10155: {"trade": 0, "info": "", "cci": "100753"},  
+                10156: {"trade": 0, "info": "", "cci": "100753"}, },
             "Chico": {
                 2919: {"trade": 0, "info": "", "colnect": "27281", "cci": "53262"},
                 9518: {"trade": 0, "info": "", "colnect": "44476", "cci": "82893"},
                 9519: {"trade": 0, "info": "", "colnect": "30526", "cci": "25712"}, },
+            "Cincinnati": {
+                10132: {"trade": 0, "info": "", "colnect": "52830", "cci": "191358"}, },
             "Cleveland (Fat Head's)": {
                 8033: {"trade": 0, "info": "", "colnect": "25193", "cci": "273291"}, },
             "Cleveland (Forest City)": {
@@ -12019,20 +12067,30 @@ class CapsData:
                 2904: {"trade": 0, "info": "", "colnect": "32555", "cci": "50380"}, },
             "Frederick": {
                 2917: {"trade": 0, "info": "", "colnect": "21868", "cci": "22923"}, },
+            "Glendale": {
+                10118: {"trade": 0, "info": "", "cci": "292516"}, },
             "Golden": {
                 2905: {"trade": 1, "info": "", "colnect": "37278", "cci": "94530"},
                 8364: {"trade": 0, "info": "", "colnect": "21863", "cci": "62396"},
                 8365: {"trade": 0, "info": "", "cci": "75890"},
+                10165: {"trade": 0, "info": "", "colnect": "55724", "cci": "234607"}, 
             },
             "Grand Rapids": {
                 7069: {"trade": 0, "info": "x", "colnect": "45789", "cci": "110195"}, },
             "Hamburg": {
                 8989: {"trade": 0, "info": "", "colnect": "39039", "cci": "111200"}, },
+            "Jacksonville": {
+                10173: {"trade": 0, "info": "", "colnect": "21848", "cci": "31259"}, }, 
             "Kailua-Kona": {
                 6178: {"trade": 0, "info": "x", "cci": "44312"},
-                9215: {"trade": 0, "info": "x", "cci": "122873"}, },
+                9215: {"trade": 0, "info": "x", "cci": "122873"}, 
+                10179: {"trade": 0, "info": "x", "cci": "101115"}, 
+                10128: {"trade": 0, "info": "x", "cci": "101115"},
+                10170: {"trade": 0, "info": "", "cci": "211329"}, },
             "Latrobe": {
                 9439: {"trade": 0, "info": "", "cci": "5031", "colnect": "21841"}, },
+            "Lawrenceburg": {
+                10167: {"trade": 0, "info": "", "cci": "159606", "colnect": "45644"}, }, 
             "Lexington": {
                 9065: {"trade": 0, "info": "", "colnect": "54925", "cci": "104458"},
                 9089: {"trade": 0, "info": "", "cci": "107349"},
@@ -12044,8 +12102,14 @@ class CapsData:
             "Los Angeles": {
                 2902: {"trade": 0, "info": "", "colnect": "27278", "cci": "7702"},
                 2903: {"trade": 0, "info": "", "colnect": "27279", "cci": "80032"}, },
+            "Lynchburg": {
+                10177: {"trade": 0, "info": "", "colnect": "37276", "cci": "56851"}, },
             "Marquette": {
                 8987: {"trade": 0, "info": "", "colnect": "25252", "cci": "56325"}, },
+            "Miami (Sunshine)": {
+                10169: {"trade": 0, "info": "", "colnect": "40806", "cci": "34729"}, },
+            "Miami (Wynwood)": {
+                10119: {"trade": 0, "info": "", "colnect": "55763", "cci": "170322"}, },
             "Middlebury": {
                 9027: {"trade": 0, "info": "", "colnect": "45062", "cci": "8331"}, },
             "Milton": {
@@ -12062,13 +12126,16 @@ class CapsData:
                 8965: {"trade": 0, "info": "", "colnect": "21834", "cci": "2089"}, },
             "New York (Evil Twin)": {
                 9384: {"trade": 0, "info": "", "colnect": "28640", "cci": "57493"}, },
+            "New York (Q Tonic)": {
+                10131: {"trade": 0, "info": "x", "cci": "254328"}, },
             "Newport": {
                 4058: {"trade": 0, "info": "", "colnect": "9882", "cci": "7718"}, },
             "Paso Robles": {
                 6348: {"trade": 0, "info": "x", "cci": "56666"}, },
             "Petaluma": {
                 10107: {"trade": 0, "info": "", "colnect": "58504", "cci": "95883"},
-                2915: {"trade": 3, "info": "", "colnect": "30530", "cci": "197572"}, },
+                2915: {"trade": 3, "info": "", "colnect": "30530", "cci": "197572"}, 
+                10140: {"trade": 0, "info": "", "cci": "272153"}, },
             "Pottsville": {
                 6358: {"trade": 0, "info": "", "colnect": "55057", "cci": "190586"}, },
             "Salt Lake City": {
@@ -12081,6 +12148,10 @@ class CapsData:
                 9042: {"trade": 0, "info": "", "colnect": "9686"}, },
             "Sawyer": {
                 9087: {"trade": 0, "info": "", "colnect": "42792", "cci": "126802"}, },
+            "Seattle (Elysian)": {
+                10163: {"trade": 0, "info": "", "colnect": "55705", "cci": "191132"}, }, 
+            "Seattle (Mike's)": {
+                10178: {"trade": 0, "info": "", "colnect": "67974", "cci": "65458"}, },
             "St. Louis": {
                 7965: {"trade": 0, "info": "", "cci": "43898", "colnect": "21838"},
                 2906: {"trade": 0, "info": "", "cci": "100268"},
@@ -12099,6 +12170,11 @@ class CapsData:
                 6189: {"trade": 0, "info": "", "cci": "28287", "colnect": "9718"},
                 6190: {"trade": 0, "info": "", "cci": "69433", "colnect": "12962"},
                 6191: {"trade": 0, "info": "", "cci": "60589"},
+                10122: {"trade": 0, "info": "", "cci": "131047"},
+                10129: {"trade": 0, "info": "", "cci": "220589", "colnect": "50977"},
+                10153: {"trade": 0, "info": "", "cci": "240593"}, 
+                10166: {"trade": 0, "info": "", "cci": "215401", "colnect": "55762"},
+                10168: {"trade": 0, "info": "", "cci": "285719"}, 
             },
             "St. Paul": {
                 4320: {"trade": 0, "info": "", "cci": "130906", "colnect": "40748"}},
@@ -13004,6 +13080,9 @@ class CapsData:
             6085: {"trade": 0, "info": ""},
             6943: {"trade": 0, "info": "", "cci": "102092"},
             7013: {"trade": 0, "info": ""},
+            10120: {"trade": 0, "info": ""},
+            10130: {"trade": 0, "info": ""},
+            10133: {"trade": 0, "info": "", "cci": "280459"}, 
             7979: {"trade": 0, "info": ""},
             7999: {"trade": 0, "info": ""},
             8008: {"trade": 0, "info": ""},
@@ -13026,6 +13105,7 @@ class CapsData:
             7684: {"trade": 0, "info": "", "colnect": "33241"},
             8827: {"trade": 2, "info": "", "colnect": "33241", "cci": "128203"},
             8508: {"trade": 0, "info": "", "colnect": "62330"},
+            10174: {"trade": 0, "info": "", "colnect": "60605"},
         }
     }
 
@@ -13076,6 +13156,7 @@ class CapsData:
                      'Gwinea': 114,
                      'Hiszpania': 24,
                      'Holandia': 25,
+                     'Honduras': 139,
                      'Indie': 27,
                      'Indonezja': 28,
                      'Irak': 82,
@@ -13129,6 +13210,7 @@ class CapsData:
                      'Polinezja Francuska': 99,
                      'Polska': 56,
                      'Południowa Afryka': 59,
+                     'Portoryko': 138,
                      'Portugalia': 57,
                      'Republika Zielonego Przylądka': 131,
                      'Reunion': 108,
