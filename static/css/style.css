@@ -2,7 +2,9 @@
     color-scheme: dark;
     scrollbar-color: #555 #222;
 }
-
+p{
+    padding-bottom: 5px;
+}
 body {
     background-color: #222;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -40,6 +42,12 @@ nav.countries-list {
     position: fixed;
     height: 100%;
     overflow-y: scroll;
+}
+#countries-list > ul > li:nth-child(1) {
+    background-color: #e3de3d;
+}
+#countries-list > ul > li:nth-child(1) a{
+    color: black;
 }
 
 #countries-list-toggle {
